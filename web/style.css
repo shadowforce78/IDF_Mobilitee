@@ -1,0 +1,144 @@
+table {
+    width: 100%;
+    border-collapse: separate; /* nécessaire pour sticky */
+    border-spacing: 0;         /* conserver les bordures jointives */
+    font-size: 26px; /* lisible à distance */
+    background: #121a2d;
+    border: 1px solid #2a3650;
+    /* unifié */
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    border: 1px solid #2a3650;
+}
+
+thead th {
+    background-color: #1f2a44;
+    color: #e8eefc;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* S’assurer que l’en-tête ne se fait pas recouvrir par les cellules */
+thead th { border-bottom: 2px solid #2a3650; }
+
+/* Mise en page une seule colonne */
+.container {
+    display: block;
+}
+
+.column {
+    width: 100%;
+}
+
+/* Arrière-plan global et titres */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #0b1220;
+    color: #e6ecff;
+}
+
+h1 {
+    margin: 12px 12px 6px;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+#info {
+    margin: 0 12px 12px;
+    font-size: 14px;
+    color: #b9c6ff;
+}
+
+/* Table style lisible et contrasté */
+
+tr:nth-child(even) td {
+    background: #0f1729;
+}
+
+tr:nth-child(odd) td {
+    background: #111a2f;
+}
+
+tr:hover td {
+    background: #182345;
+}
+
+td b {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* Cellule de ligne: pastille + nom de ligne */
+.line-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.line-badge {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Colonne des départs: petits blocs bien visibles */
+.departures-cell {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.departure-time {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: #0e1a33;
+    border: 1px solid #2a3650;
+}
+
+.departure-time .minutes {
+    font-size: 26px;
+    font-weight: 900;
+    color: #94b3ff;
+    line-height: 1.2;
+}
+
+.departure-time .hour {
+    font-size: 14px;
+    color: #9fb0d9;
+    opacity: 0.85;
+}
+
+/* Départs imminents en rouge/orangé */
+.departure-time.soon {
+    background: #2a1220;
+    border-color: #db4455;
+}
+
+.departure-time.soon .minutes {
+    color: #ff7171;
+}
+
+/* Rendre le tableau plus "aéré" sur très grands écrans */
+@media (min-width: 1600px) {
+    table {
+        font-size: 28px;
+    }
+
+    td b {
+        font-size: 30px;
+    }
+}

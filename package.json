@@ -1,0 +1,28 @@
+{
+  "name": "idfscrapper",
+  "version": "2.0.0",
+  "description": "Affichage en temps réel des transports en commun IDF",
+  "main": "server.js",
+  "scripts": {
+    "start": "node display.js",
+    "web": "nodemon server.js",
+    "search:stop": "node scripts/search-stop.js",
+    "search:line": "node scripts/search-line.js"
+  },
+  "keywords": [
+    "idf",
+    "transport",
+    "bus",
+    "train",
+    "ratp",
+    "sncf"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.10"
+  }
+}

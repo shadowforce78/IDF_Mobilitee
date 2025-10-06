@@ -1,0 +1,18 @@
+# Fichiers de configuration
+.env
+data/*.json
+
+# Dépendances
+node_modules/
+package-lock.json
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Anciens fichiers
+old/
+
+# OS
+.DS_Store
+Thumbs.db

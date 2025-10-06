@@ -1,0 +1,96 @@
+{
+    "lines": [
+        {
+            "id": "C01521",
+            "name": "5134",
+            "type": "bus",
+            "description": "Bus 5134 - Saint-Quentin-en-Yvelines",
+            "enabled": true,
+            "color": "#00643c"
+        },
+        {
+            "id": "C01727",
+            "name": "C",
+            "type": "rer",
+            "description": "RER C",
+            "enabled": true,
+            "color": "#ffcc30"
+        },
+        {
+            "id": "C01736",
+            "name": "N",
+            "type": "train",
+            "description": "Transilien N",
+            "enabled": true,
+            "color": "#00b297"
+        },
+        {
+            "id": "C01740",
+            "name": "L",
+            "type": "train",
+            "description": "Transilien L",
+            "enabled": true,
+            "color" : "#c4a4cc"
+        },
+        {
+            "id": "C01741",
+            "name": "U",
+            "type": "train",
+            "description": "Transilien U",
+            "enabled": true,
+            "color": "#b6134c"
+        }
+    ],
+    "stops": [
+        {
+            "id": "20637",
+            "name": "Rue de Satory",
+            "town": "Versailles",
+            "lines": [
+                "C01521"
+            ],
+            "description": "Direction Gare de Versailles Chantiers"
+        },
+        {
+            "id": "4319",
+            "name": "Rue de Satory",
+            "town": "Versailles",
+            "lines": [
+                "C01521"
+            ],
+            "description": "Direction Village"
+        },
+        {
+            "id": "43220",
+            "name": "Gare de Versailles Château - Rive Gauche",
+            "town": "Versailles",
+            "lines": [
+                "C01727"
+            ],
+            "description": "RER C",
+            "format": "StopArea"
+        },
+        {
+            "id": "43219",
+            "name": "Gare de Versailles Chantiers",
+            "town": "Versailles",
+            "lines": [
+                "C01727",
+                "C01736",
+                "C01741"
+            ],
+            "description": "RER C et Transilien N",
+            "format": "StopArea"
+        },
+        {
+            "id": "44602",
+            "name": "Gare de Versailles Rive Droite",
+            "town": "Versailles",
+            "lines": [
+                "C01740"
+            ],
+            "description": "Transilien L",
+            "format": "StopArea"
+        }
+    ]
+}
