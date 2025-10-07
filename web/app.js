@@ -20,7 +20,7 @@ async function load() {
         // Fonction pour créer un tableau
         function createTable(items) {
             let html =
-                "<table><thead><tr><th>Ligne</th><th>Arrêt</th><th>Destination</th><th>Départs</th></tr></thead><tbody>";
+                "<table><thead><tr><th>Ligne</th><th>Arrêt</th><th>Direction</th><th>Départs</th></tr></thead><tbody>";
             items.forEach((item) => {
                 const lineColor =
                     (item.line && item.line.color) ||
