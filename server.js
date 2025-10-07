@@ -91,11 +91,6 @@ app.get('/', (req, res) => {
 // Démarrer le serveur
 app.listen(PORT, () => {
     console.log(`🚀 Serveur web démarré sur http://localhost:${PORT}`);
-    console.log(`📺 Ouvrez votre navigateur sur http://localhost:${PORT}`);
-    console.log(`\n💡 Pour afficher sur une TV:`);
-    console.log(`   1. Ouvrez l'URL sur la TV ou un ordinateur connecté`);
-    console.log(`   2. Appuyez sur F11 pour le mode plein écran`);
-    console.log(`   3. Les données se rafraîchiront automatiquement toutes les 30 secondes\n`);
 });
 
 module.exports = app;
